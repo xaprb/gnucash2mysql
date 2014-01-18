@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>gnucash2mysql - Read a GnuCash file and store it in MySQL for querying.</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body style="background-color: white">
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#configuration">CONFIGURATION</a></li>
+	<li><a href="#system_requirements">SYSTEM REQUIREMENTS</a></li>
+	<li><a href="#license">LICENSE</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<hr />
+<h1><a name="name">NAME</a></h1>
+<p>gnucash2mysql - Read a GnuCash file and store it in MySQL for querying.</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<p>Assuming you have your .my.cnf file set up to connect as desired, the
+following will create tables and store the file in them:</p>
+<pre>
+ gnucash2mysql &lt;gnucash file&gt;</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>gnucash2mysql reads an XML file and stores it in MySQL tables for your
+analysis with standard SQL.  Some queries are included with gnucash2mysql so
+you can get started.  For more information, read the articles I've written on
+<a href="http://www.xaprb.com/.">http://www.xaprb.com/.</a>  Please let me know if you need help, or if it doesn't
+do what you want.</p>
+<p>Prior to MySQL 5, DECIMAL math isn't precise, and may produce unexpected
+results.</p>
+<p>
+</p>
+<hr />
+<h1><a name="configuration">CONFIGURATION</a></h1>
+<p>No configuration file is needed.  If you specify arguments on the command
+line, they take precedence over other sources.  Otherwise,
+mysql-query-profiler will try to read your MySQL client configuration file
+($HOME/.my.cnf), and if it can't find what it needs to connect to MySQL, will
+prompt you interactively.</p>
+<p>
+</p>
+<hr />
+<h1><a name="system_requirements">SYSTEM REQUIREMENTS</a></h1>
+<p>You need the following Perl modules: Getopt::Long, DBI, DBD::mysql,
+Term::ProgressBar, XML::Parser::Expat, and Term::ReadKey.</p>
+<p>
+</p>
+<hr />
+<h1><a name="license">LICENSE</a></h1>
+<p>THIS PROGRAM IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF
+MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.</p>
+<p>Copyright (c) 2006 Baron Schwartz, baron at xaprb dot com.  All rights
+reserved, except for those granted under the license.</p>
+<p>This program is free software.  You may redistribute it under either the GNU
+GPL version 2, or the Perl Artistic License, at your option.  For details on
+these licenses, please issue `man perlartistic' or `man perlgpl'.</p>
+<p>
+</p>
+<hr />
+<h1><a name="author">AUTHOR</a></h1>
+<p>Baron Schwartz, baron at xaprb dot com.</p>
+
+</body>
+
+</html>
