@@ -2,7 +2,10 @@ gnucash2mysql
 =============
 
 Gnucash to MySQL export script.  Please view the perldoc
-for more details.
+for more details. You might also be interested in reading [a blog post about it](http://www.xaprb.com/blog/2006/03/12/gnucash-to-mysql-export-script/).
+
+Note that this is old software from a long time ago. I'm only putting it on
+GitHub as a public service in case anyone's interested.
 
 CHANGES
 =======
